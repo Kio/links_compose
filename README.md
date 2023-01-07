@@ -11,8 +11,8 @@ To set up the application, you will need to clone the relevant repositories into
 ```
 git clone https://github.com/Kio/links_compose.git
 cd links_compose
-git clone https://github.com/Kio/links_frontend.git
-git clone https://github.com/Kio/links_backend.git
+git clone https://github.com/Kio/links_frontend.git frontend
+git clone https://github.com/Kio/links_backend.git backend
 ```
 Also you will need [docker-compose](https://docs.docker.com/compose/install/) tool.
 
