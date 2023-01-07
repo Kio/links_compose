@@ -12,6 +12,8 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
+    env_file:
+      - .env
     healthcheck:
       test: curl --fail http://localhost:3000 || exit 1
       interval: 60s
@@ -60,6 +62,6 @@ services:
       - '15672:15672'
     healthcheck:
       test: rabbitmq-diagnostics -q ping
-      interval: 30s
-      timeout: 30s
-      retries: 3
+      interval: 5s
+      timeout: 5s
+      retries: 10
